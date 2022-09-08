@@ -98,7 +98,7 @@ body{
 }
 
 .main-image{
-  width: clamp(9em, 80vw, 120em);
+  width: clamp(9em, 80vw, 140em);
 }
 
 .content{
@@ -135,6 +135,7 @@ body{
 }
 
 button {
+  cursor: pointer;
   background-color: var(--color-white-);
   padding: 0.9em 6em;
   border-radius: 5em;
@@ -163,8 +164,9 @@ footer>p{
   gap: 0.75em;
 }
 
-.social-nav>img {
-  width: 2em;
+.social-nav>a {
+  cursor: pointer;
+  width: 3em;
 }
 
 @media screen and (min-width: 85em ){
@@ -173,7 +175,7 @@ footer>p{
     background-repeat: no-repeat;
     background-position: top left;
     background-size: contain;
-    padding: 4em 5em 0 6em;
+    padding: 4em 3em 0 5em;
   }
   .main-content {
     display: flex;
@@ -182,21 +184,20 @@ footer>p{
   }
   
   .main-image{
-    margin-top: 3em;
-    width: 145em;
+    margin-top: 2em;
+    width: 135em;
   }
 
   .content{
     margin-top: -5em;
-    margin-right: 5em;
+    margin-right: 4em;
     text-align: start;
     align-items: flex-start;
-    gap: 1em;
+    
   }
 
   .content>p {
-    font-size: 1.5em;
-    line-height: 2.1rem;
+    font-size: 1.2em;
   }
 
   button{
@@ -219,4 +220,8 @@ footer>p{
     width: 3em;
     gap: 5em;
   }
+}
+
+button:focus {  
+  background-color: var(--color-accent-);
 }
